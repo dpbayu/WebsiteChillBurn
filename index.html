@@ -103,21 +103,21 @@
     <!-- Section 1 End -->
     <!-- Section 2 Start -->
     <div class="h-fit my-20 w-full flex items-center justify-evenly">
-        <div class="relative rounded-lg">
+        <div class="relative rounded-md">
             <img class="h-[250px] w-[250px] opacity-50" src="./img/1.png" alt="logo1">
             <div class="absolute top-0 p-5">
                 <p class="text-secondary text-2xl">01</p>
                 <p class="text-white text-2xl">Fun Hangout</p>
             </div>
         </div>
-        <div class="relative rounded-lg">
+        <div class="relative rounded-md">
             <img class="h-[250px] w-[250px] opacity-50" src="./img/2.png" alt="logo2">
             <div class="absolute top-0 p-5">
                 <p class="text-secondary text-2xl">02</p>
                 <p class="text-white text-2xl">Comfortable place to be alone</p>
             </div>
         </div>
-        <div class="relative rounded-lg">
+        <div class="relative rounded-md">
             <img class="h-[250px] w-[250px] opacity-50" src="./img/3.png" alt="logo3">
             <div class="absolute top-0 p-5">
                 <p class="text-secondary text-2xl">03</p>
@@ -483,36 +483,46 @@
     <!-- Section 8 End -->
     <!-- Section 9 Start -->
     <div class="my-10 text-center">
-        <div class="grid grid-cols-4 mx-20 my-10">
-            <div class="col-start-1 col-span-2 row-span-2 justify-items-center text-white">
+        <div class="grid grid-cols-4 grid-rows-12 gap-5 mx-20 my-10">
+            <div class="col-start-1 col-span-2 row-span-1 justify-items-center text-white">
                 <h4 class="text-4xl">BLOG</h4>
                 <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
                 <p class="mx-auto w-72 my-5">Contains hot news from various regions about coffee and for coffee lovers
                 </p>
                 <a class="text-secondary w-full font-semibold" href="#">SEE ALL</a>
             </div>
-            <div class="h-full relative p-5 rounded-lg w-full col-start-1 row-start-3 row-span-1">
-                <img class="rounded-lg h-full w-full opacity-50" src="./img/blog/blog1.png" alt="blog1">
-                <div class="absolute top-16 left-10 text-white w-60">
-                    <p class="text-xl font-semibold">IS IT HEALTHY TO DRINK TEA ?</p>
-                    <div class="h-[1px] mt-5 w-28 bg-white rounded-full ml-16"></div>
+            <div class="col-start-1 row-start-2 row-span-1">
+                <div class="w-full relative flex justify-center h-full">
+                    <img class="rounded-md h-full w-full opacity-50 bg-cover" src="./img/blog/blog1.png" alt="blog1">
+                    <div
+                        class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
+                        <p class="w-44 text-md font-semibold">IS IT HEALTHY TO DRINK TEA ?</p>
+                        <div class="h-[1px] mt-5 w-28 bg-white rounded-full"></div>
+                    </div>
                 </div>
             </div>
-            <div class="h-full p-5 relative rounded-lg w-full col-start-2 row-start-3 row-span-1">
-                <img class="rounded-lg h-full w-full opacity-50" src="./img/blog/blog2.png" alt="blog2">
-                <div class="absolute top-16 left-10 text-white w-60">
-                    <p class="text-xl font-semibold">HOW TO MAKE DELICIOUS COFFEE AT HOME ?</p>
-                    <div class="h-[1px] mt-5 w-28 bg-white rounded-full ml-16"></div>
+            <div class="col-start-2 row-start-2 row-span-1">
+                <div class="w-full relative flex justify-center h-full">
+                    <img class="rounded-md h-full w-full opacity-50 bg-cover" src="./img/blog/blog2.png" alt="blog2">
+                    <div
+                        class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
+                        <p class="w-44 text-md font-semibold">HOW TO MAKE DELICIOUS COFFEE AT HOME ?</p>
+                        <div class="h-[1px] mt-5 w-28 bg-white rounded-full"></div>
+                    </div>
                 </div>
             </div>
-            <div class="h-full w-full p-5 relative rounded-lg w-full col-start-3 col-span-2 row-start-1 row-span-3">
-                <img class="rounded-lg h-96 w-full opacity-50" src="./img/blog/blog3.png" alt="blog3">
-                <div class="absolute top-40 left-36 text-white w-96">
-                    <p class="text-2xl font-semibold">WHEN THE BEST TIME TO DRINK COFFEE ?</p>
-                    <div class="h-[1px] mt-5 w-80 bg-white rounded-full ml-9"></div>
+            <div class="col-start-3 col-span-2 row-start-1 row-span-2">
+                <div class="w-full relative flex justify-center h-full">
+                    <img class="rounded-md h-full w-full opacity-50 bg-cover" src="./img/blog/blog3.png" alt="blog3">
+                    <div
+                        class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
+                        <p class="w-72 text-2xl font-semibold">WHEN THE BEST TIME TO DRINK COFFEE</p>
+                        <div class="h-[1px] mt-5 w-72 bg-white rounded-full"></div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
     <!-- Section 9 End -->
@@ -531,9 +541,9 @@
                                 <form action="#" class="flex justify-center gap-5 items-center">
                                     <p class="w-56">Enter Your Email</p>
                                     <input type="text" placeholder="Your Email"
-                                        class="p-2 w-full rounded-lg bg-slate-500 placeholder-white px-5">
+                                        class="p-2 w-full rounded-md bg-slate-500 placeholder-white px-5">
                                 </form>
-                                <button class="bg-secondary px-5 rounded-lg py-1 font-semibold">SUBSCRIBE</button>
+                                <button class="bg-secondary px-5 rounded-md py-1 font-semibold">SUBSCRIBE</button>
                             </div>
                         </div>
                     </div>
@@ -548,7 +558,7 @@
         <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
         <div class="flex px-20 my-10 gap-20">
             <div class="w-1/2">
-                <img src="./img/6.png" alt="section11">
+                <img class="rounded-md" src="./img/6.png" alt="section11">
             </div>
             <div class="flex flex-col w-full gap-5">
                 <!-- Row 1 Start -->
@@ -557,7 +567,7 @@
                         <form action="#" class="text-white flex flex-col gap-1">
                             <p>Date</p>
                             <input type="text" placeholder="Date"
-                                class="py-1 w-full rounded-lg bg-slate-500 placeholder-white px-5">
+                                class="py-1 w-full rounded-md bg-slate-500 placeholder-white px-5">
                         </form>
                     </div>
                     <div class="w-44"></div>
@@ -565,7 +575,7 @@
                         <form action="#" class="text-white flex flex-col gap-1">
                             <p>Guest</p>
                             <input type="text" placeholder="1 - 5 People"
-                                class="py-1 w-full rounded-lg bg-slate-500 placeholder-white px-5">
+                                class="py-1 w-full rounded-md bg-slate-500 placeholder-white px-5">
                         </form>
                     </div>
                 </div>
@@ -576,7 +586,7 @@
                         <form action="#" class="text-white flex flex-col gap-1">
                             <p>Time Start</p>
                             <input type="text" placeholder="Start"
-                                class="py-1 w-full rounded-lg bg-slate-500 placeholder-white px-5">
+                                class="py-1 w-full rounded-md bg-slate-500 placeholder-white px-5">
                         </form>
                     </div>
                     <div class="h-[1px] w-44 bg-white mx-auto mt-5"></div>
@@ -584,7 +594,7 @@
                         <form action="#" class="text-white flex flex-col gap-1">
                             <p>Time Finish</p>
                             <input type="text" placeholder="Finish"
-                                class="py-1 w-full rounded-lg bg-slate-500 placeholder-white px-5">
+                                class="py-1 w-full rounded-md bg-slate-500 placeholder-white px-5">
                         </form>
                     </div>
                 </div>
@@ -595,7 +605,7 @@
                         <form action="#" class="text-white flex flex-col gap-1">
                             <p>Your Name</p>
                             <input type="text" placeholder="Name"
-                                class="py-1 w-full rounded-lg bg-slate-500 placeholder-white px-5">
+                                class="py-1 w-full rounded-md bg-slate-500 placeholder-white px-5">
                         </form>
                     </div>
                     <div class="w-44"></div>
@@ -603,7 +613,7 @@
                         <form action="#" class="text-white flex flex-col gap-1">
                             <p>Your Phone</p>
                             <input type="text" placeholder="Phone"
-                                class="py-1 w-full rounded-lg bg-slate-500 placeholder-white px-5">
+                                class="py-1 w-full rounded-md bg-slate-500 placeholder-white px-5">
                         </form>
                     </div>
                 </div>
@@ -614,7 +624,7 @@
                         <form action="#" class="text-white flex flex-col gap-1">
                             <p>Your Email</p>
                             <input type="text" placeholder="Email"
-                                class="py-1 w-full rounded-lg bg-slate-500 placeholder-white px-5">
+                                class="py-1 w-full rounded-md bg-slate-500 placeholder-white px-5">
                         </form>
                     </div>
                     <div class="w-1/4">
