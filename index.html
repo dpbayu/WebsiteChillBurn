@@ -37,9 +37,10 @@
     </script>
 </head>
 
-<body class="bg-bg">
+<body class="bg-bg 2xl:container 2xl:mx-auto">
     <!-- Navbar Start -->
-    <ul class="flex flex-col justify-center items-center w-full px-10 absolute sm:flex-row md:justify-between">
+    <ul
+        class="flex flex-col justify-center items-center w-full px-10 absolute sm:flex-row md:justify-between md:px-20 2xl:container">
         <div>
             <img class="h-28" src="./img/logo.png" alt="logo">
         </div>
@@ -53,14 +54,16 @@
     </ul>
     <!-- Navbar End -->
     <!-- Section 1 Start -->
-    <div class="bg-[url('/img/bg.png')] h-fit w-full bg-center bg-cover py-5 mb-10 sm:h-screen">
-        <div class="mx-5 pt-44 text-white">
+    <div
+        class="bg-[url('/img/bg.png')] h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl	">
+        <div class="relative pt-44 text-white">
             <!-- Title Start -->
             <h1 class="font-bold text-2xl w-full sm:text-3xl sm:w-96">START THE MORNING WITH A <span
                     class="text-secondary">COFFEE</span></h1>
             <!-- Title End -->
             <!-- Subtitle Start -->
-            <h2 class="w-full text-base text-white mt-5 mb-5 sm:w-2/3">A place to experience the delights of modern
+            <h2 class="w-full text-base text-white mt-5 mb-5 sm:w-2/3 md:w-[600px]">A place to experience the delights
+                of modern
                 coffee art!
                 It offers its guest scrumption dessert, tasty coffee and, of course, warmth</h2>
             <!-- Subtitle End -->
@@ -94,7 +97,7 @@
                 </div>
                 <!-- Social Media End -->
                 <!-- Button Start -->
-                <div class="flex flex-col gap-5 w-full items-center sm:flex-row">
+                <div class="flex flex-col gap-5 w-full justify-end items-center sm:flex-row">
                     <button class="h-7 w-44 px-5 bg-primary rounded font-semibold flex items-center gap-5">
                         <svg class="h-5 w-5 fill-current" viewBox="0 0 56.693 56.693">
                             <path
@@ -156,10 +159,10 @@
     <!-- Sction 3 Start -->
     <div class="my-10">
         <div class="flex flex-col sm:flex-row">
-            <div class="sm:w-1/2">
+            <div class="sm:w-1/2 lg:h-96">
                 <img class="bg-cover h-full w-full" src="./img/4.png" alt="section3">
             </div>
-            <div class="bg-third text-white w-full h-full px-5 py-5 sm:w-1/2">
+            <div class="bg-third text-white w-full h-full p-5 sm:w-1/2 lg:h-96 lg:p-10">
                 <p class="bg-primary w-28 py-1 text-center rounded-md my-5">Our History</p>
                 <h3 class="text-xl mb-5">Cursus habitasse neque</h3>
                 <p class="text-sm">Our incredibly rare beans come from humble beginnings in Yemen, where decades of
@@ -189,7 +192,7 @@
         <!-- Menu End -->
         <!-- List Menu Start -->
         <div class="w-full h-fit pb-10 flex flex-col gap-10 justify-center">
-            <div class="flex w-full flex-col justify-center gap-10 sm:flex-row sm:flex-wrap">
+            <div class="flex w-full flex-col justify-center gap-10 sm:flex-row sm:flex-wrap xl:w-1/2 xl:mx-auto">
                 <!-- Menu 1 Start -->
                 <div class="relative px-5">
                     <div class="w- flex items-center relative bg-white h-fit py-2 mx-4 px-5 mt-10">
@@ -325,11 +328,12 @@
     <!-- Section 5 Start -->
     <div class="my-10">
         <div class="flex flex-col items-center">
-            <div class="bg-banner-1 h-40 w-full bg-cover relative sm:h-56">
+            <div class="bg-banner-1 h-40 w-full bg-cover relative sm:h-56 lg:h-72">
                 <div class="text-white text-sm w-full h-full justify-center items-center">
                     <div
-                        class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:justify-start sm:items-start sm:top-10 sm:left-10 sm:w-fit">
-                        <p class="w-56 text-center sm:text-left sm:font-semibold sm;text-base">BUY 2 COFFEES AND GET
+                        class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:justify-start sm:items-start sm:top-10 sm:left-10 sm:w-fit lg:">
+                        <p class="w-56 text-center sm:text-left sm:font-semibold sm:text-base lg:text-2xl lg:w-80">BUY 2
+                            COFFEES AND GET
                             ANOTHER WAFFLE FOR FREE</p>
                         <button class="w-28 py-1 bg-primary rounded font-bold mb-10 text-center text-xs">ALL
                             OFFER</button>
@@ -337,21 +341,21 @@
                 </div>
             </div>
             <div class="w-full flex flex-col sm:flex-row">
-                <div class="bg-banner-2 h-40 w-full bg-cover relative">
+                <div class="bg-banner-2 h-40 w-full bg-cover relative lg:h-60">
                     <div class="text-white text-sm w-full h-full justify-center items-center">
                         <div
                             class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:top-5">
-                            <p>20% OFF ALL DESSERT</p>
+                            <p class="lg:text-2xl">20% OFF ALL DESSERT</p>
                             <div class="w-28 h-[1px] bg-white"></div>
                             <button class="w-28 py-1 bg-primary rounded mb-10 text-center text-xs">SEE MORE</button>
                         </div>
                     </div>
                 </div>
-                <div class="bg-banner-3 h-40 w-full bg-cover relative">
+                <div class="bg-banner-3 h-40 w-full bg-cover relative lg:h-60">
                     <div class="text-white text-sm w-full h-full justify-center items-center">
                         <div
                             class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:top-5">
-                            <p>30% OFF ALL COFFEE</p>
+                            <p class="lg:text-2xl">30% OFF ALL COFFEE</p>
                             <div class="w-28 h-[1px] bg-white"></div>
                             <button class="w-28 py-1 bg-primary rounded mb-10 text-center text-xs">SEE MORE</button>
                         </div>
@@ -362,27 +366,27 @@
     </div>
     <!-- Section 5 End -->
     <!-- Section 6 Start -->
-    <div class="my-10">
+    <div class="my-10 lg:mx-20">
         <div class="flex flex-col items-center text-white gap-5">
             <h2 class="text-2xl">PRODUCT OF THE WEEK</h2>
             <div class="w-28 h-[1px] bg-white"></div>
         </div>
         <div class="m-5 flex flex-col gap-10 sm:flex-row">
-            <div class="h-56 w-full flex flex-col gap-2">
+            <div class="h-56 w-full flex flex-col gap-2 lg:h-80">
                 <img class="h-full w-full bg-cover" src="./img/productofweek/tea.png" alt="product1">
                 <div class="flex justify-between text-white">
                     <p class="text-sm sm:text-base">LEMON TEA</p>
                     <p>Rp 8.000</p>
                 </div>
             </div>
-            <div class="h-56 w-full flex flex-col gap-2">
+            <div class="h-56 w-full flex flex-col gap-2 lg:h-80">
                 <img class="h-full w-full bg-cover" src="./img/productofweek/coffee.png" alt="product2">
                 <div class="flex justify-between text-white">
                     <p class="text-sm sm:text-base">FLATE WHITE</p>
                     <p>Rp 14.000</p>
                 </div>
             </div>
-            <div class="h-56 w-full flex flex-col gap-2">
+            <div class="h-56 w-full flex flex-col gap-2 lg:h-80">
                 <img class="h-full w-full bg-cover" src="./img/productofweek/dessert.png" alt="product3">
                 <div class="flex justify-between text-white">
                     <p class="text-sm sm:text-base">WAFFFLE CAKE</p>
@@ -393,37 +397,43 @@
     </div>
     <!-- Section 6 End -->
     <!-- Section 7 Start -->
-    <div class="my-10 text-center">
+    <div class="my-10 mt-20 text-center lg:mx-20">
         <h4 class="text-white text-2xl">INSTAGRAM: <span class="font-bold">@chill&burn</span></h4>
         <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
         <div class="grid grid-cols-12 grid-rows-12 mx-10 my-5 gap-5">
             <!-- Image 1 Start -->
-            <img class="h-40 w-full col-start-1 col-span-12 border-base sm:col-span-6 sm:h-full md:h-56" src="./img/instagram/image1.png"
-                alt="image1">
+            <img class="h-40 w-full col-start-1 col-span-12 border-base sm:col-span-6 sm:h-full md:h-56 lg:h-full lg:col-span-3"
+                src="./img/instagram/image1.png" alt="image1">
             <!-- Image 1 End -->
             <!-- Image 2 Start -->
-            <img class="h-40 w-full col-start-1 col-span-12 row-start-2 border-base sm:col-span-6 sm:h-full md:h-56"
+            <img class="h-40 w-full col-start-1 col-span-12 row-start-2 border-base sm:col-span-6 sm:h-full md:h-56 lg:h-full lg:col-span-3"
                 src="./img/instagram/image2.png" alt="image2">
             <!-- Image 2 End -->
             <!-- Image 3 Start -->
-            <img class="h-40 w-full col-start-1 col-span-12 row-span-2 border-base sm:col-span-6 sm:row-span-2 sm:h-full" src="./img/instagram/image3.png"
-                alt="image3">
+            <img class="h-40 w-full col-start-1 col-span-12 row-span-2 border-base sm:col-span-6 sm:row-span-2 sm:h-full lg:col-span-3 lg:col-start-4"
+                src="./img/instagram/image3.png" alt="image3">
             <!-- Image 3 End -->
             <!-- Image 4 Start -->
-            <img class="h-40 w-full col-start-1 col-span-12 row-span-2 border-base sm:col-span-6 sm:h-full md:h-56"
+            <img class="h-40 w-full col-start-1 col-span-12 row-span-2 border-base sm:col-span-6 sm:h-full md:h-56 lg:h-96 lg:col-span-4 lg:h-56"
                 src="./img/instagram/image4.png" alt="image4">
             <!-- Image 4 End -->
             <!-- Image 5 Start -->
-            <img class="h-40 w-full col-start-1 col-span-12 row-span-2 border-base sm:col-span-6 sm:h-full md:h-56"
+            <img class="h-40 w-full col-start-1 col-span-12 row-span-2 border-base sm:col-span-6 sm:h-full md:h-56 lg:h-96 lg:col-span-4 lg:h-56"
                 src="./img/instagram/image5.png" alt="image5">
             <!-- Image 5 End -->
             <!-- Image 6 Start -->
-            <div class="relative h-40 w-full row-span-2 col-start-1 col-span-12 border-base sm:col-span-6 sm:h-full">
-                <img class="h-56 w-full" src="./img/instagram/image6.png" alt="image6">
+            <div
+                class="relative h-40 w-full flex justify-center row-span-2 col-start-1 col-span-12 border-base sm:col-span-6 sm:h-full lg:h-full lg:col-start-7 lg:row-start-1">
+                <img class="h-full w-full" src="./img/instagram/image6.png" alt="image6">
+                    <div
+                        class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
+                        <p class="w-56 text-lg font-semibold h-20 md:w-28 md:text-sm lg:text-xl lg:w-56">Follow to get promos and 30% discounts</p>
+                    </div>
             </div>
             <!-- Image End 6 -->
             <!-- Arrow Start -->
-            <div class="flex col-start-1 col-span-12 row-start-8 justify-center items-center gap-10 sm:col-span-6">
+            <div
+                class="flex col-start-1 col-span-12 row-start-12 justify-center items-center gap-10 sm:col-span-6 lg:col-start-9">
                 <svg class="h-10 w-10 fill-current text-primary" viewBox="0 0 512 512">
                     <path
                         d="M189.3,128.4L89,233.4c-6,5.8-9,13.7-9,22.4c0,8.7,3,16.5,9,22.4l100.3,105.4c11.9,12.5,31.3,12.5,43.2,0  c11.9-12.5,11.9-32.7,0-45.2L184.4,288h217c16.9,0,30.6-14.3,30.6-32c0-17.7-13.7-32-30.6-32h-217l48.2-50.4  c11.9-12.5,11.9-32.7,0-45.2C220.6,115.9,201.3,115.9,189.3,128.4z" />
@@ -442,11 +452,11 @@
     <div class="my-10">
         <h4 class="text-white text-2xl text-center">CUSTOMER REVIEWS</h4>
         <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
-        <div class="bg-banner-4 h-fit w-full bg-center bg-cover py-5 my-10">
-            <div class="flex flex-col md:flex-row">
+        <div class="bg-banner-4 h-fit flex items-center w-full bg-center bg-cover py-5 my-10 lg:h-96">
+            <div class="flex flex-col w-full justify-center md:flex-row">
                 <div class="relative my-5">
                     <img class="w-14 h-14 absolute -top-5 right-14 rounded-full" src="./img/1.png" alt="person1">
-                    <div class="bg-black/75 text-white mx-5 rounded-md p-5">
+                    <div class="bg-black/75 text-white mx-5 rounded-md p-5 lg:w-72">
                         <p class="font-bold text-sm ">Dwi Putra Bayu</p>
                         <div class="flex text-yellow-500">
                             <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
@@ -476,8 +486,9 @@
                     </div>
                 </div>
                 <div class="relative my-5">
-                    <img class="w-14 h-14 absolute -top-5 right-14 rounded-full md:right-12 lg:right-14" src="./img/1.png" alt="person2">
-                    <div class="bg-black/75 text-white mx-5 rounded-md p-5">
+                    <img class="w-14 h-14 absolute -top-5 right-14 rounded-full md:right-12 lg:right-14"
+                        src="./img/1.png" alt="person2">
+                    <div class="bg-black/75 text-white mx-5 rounded-md p-5 lg:w-72">
                         <p class="font-bold text-sm">Syifa Khairunnisa</p>
                         <div class="flex text-yellow-500">
                             <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
@@ -508,7 +519,7 @@
                 </div>
                 <div class="relative my-5">
                     <img class="w-14 h-14 absolute -top-5 right-14 rounded-full" src="./img/1.png" alt="person1">
-                    <div class="bg-black/75 text-white mx-5 rounded-md p-5">
+                    <div class="bg-black/75 text-white mx-5 rounded-md p-5 lg:w-72">
                         <p class="font-bold text-sm">Sila Indi</p>
                         <div class="flex text-yellow-500">
                             <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
@@ -555,7 +566,8 @@
                 <div class="bg-blog-1 bg-cover w-full relative flex justify-center h-56 md:h-40">
                     <div
                         class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
-                        <p class="w-56 text-lg font-semibold h-20 md:w-28 md:text-sm lg:text-xl lg:w-56">IS IT HEALTHY TO DRINK TEA ?</p>
+                        <p class="w-56 text-lg font-semibold h-20 md:w-28 md:text-sm lg:text-xl lg:w-56">IS IT HEALTHY
+                            TO DRINK TEA ?</p>
                         <div class="h-[1px] mt-5 w-44 bg-white rounded-full md:w-28 lg:w-44"></div>
                     </div>
                 </div>
@@ -564,7 +576,8 @@
                 <div class="bg-blog-2 bg-cover w-full relative flex justify-center h-56 md:h-40">
                     <div
                         class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
-                        <p class="w-56 text-lg font-semibold h-20 md:w-28 md:text-sm lg:text-xl lg:w-56">HOW TO MAKE DELICIOUS COFFEE AT HOME ?</p>
+                        <p class="w-56 text-lg font-semibold h-20 md:w-28 md:text-sm lg:text-xl lg:w-56">HOW TO MAKE
+                            DELICIOUS COFFEE AT HOME ?</p>
                         <div class="h-[1px] mt-5 w-44 bg-white rounded-full md:w-28 lg:w-44"></div>
                     </div>
                 </div>
@@ -573,7 +586,8 @@
                 <div class="bg-blog-3 bg-cover w-full relative flex justify-center h-56 md:h-full">
                     <div
                         class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
-                        <p class="w-56 text-lg font-semibold h-20 md:w-28 md:text-sm lg:text-xl lg:w-56">WHEN THE BEST TIME TO DRINK COFFEE</p>
+                        <p class="w-56 text-lg font-semibold h-20 md:w-28 md:text-sm lg:text-xl lg:w-56">WHEN THE BEST
+                            TIME TO DRINK COFFEE</p>
                         <div class="h-[1px] mt-5 w-44 bg-white rounded-full"></div>
                     </div>
                 </div>
@@ -583,7 +597,7 @@
     <!-- Section 9 End -->
     <!-- Section 10 Start -->
     <div class="my-10">
-        <div class="bg-banner-5 h-fit w-full bg-center bg-cover py-5 my-10">
+        <div class="bg-banner-5 h-fit w-full flex justify-center items-center bg-center bg-cover py-5 my-10 lg:h-80">
             <div class="text-white text-center">
                 <h4 class="font-bold text-xl">SUBSCRIBE TO OUR NEWSLETTER AND YOTUBE</h4>
                 <div class="flex flex-col w-full my-5 px-10 justify-center items-center">
@@ -592,20 +606,20 @@
                         placeholder="Enter your email">
                 </div>
                 <button
-                    class="px-10 py-1 bg-secondary rounded font-bold text-center text-sm text-primary">SUBSCRIBE</button>
+                    class="px-10 py-1 bg-secondary rounded font-bold text-center text-sm text-black">SUBSCRIBE</button>
             </div>
         </div>
     </div>
     <!-- Section 10 End -->
     <!-- Section 11 Start -->
-    <div class="my-10">
+    <div class="my-10 lg:mx-20">
         <h4 class="text-white text-2xl text-center">RESERVE A TABLE</h4>
         <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
-        <div class="my-5 flex flex-col gap-5 h-fit w-full md:flex-row">
+        <div class="my-5 flex flex-col h-fit gap-10 w-full md:flex-row">
             <div class="w-full md:w-1/2">
-                <img class="h-full md:mx-5" src="./img/5.png" alt="section11">
+                <img class="h-full w-full md:mx-5" src="./img/5.png" alt="section11">
             </div>
-            <div class="flex flex-col gap-3 md:w-1/2">
+            <div class="flex flex-col h-full gap-3 md:w-1/2">
                 <div class="flex flex-col mx-5">
                     <label class="text-white mb-2" for="email">Date</label>
                     <input class="rounded w-full py-1 px-3 text-gray-700" type="text" placeholder="Date">
@@ -615,7 +629,7 @@
                     <input class="rounded w-full py-1 px-3 text-gray-700" type="text" placeholder="1 - 5 person">
                 </div>
                 <!-- Time Start -->
-                <div class="flex items-center">
+                <div class="flex items-center justify-between">
                     <div class="flex flex-col mx-5">
                         <label class="text-white mb-2" for="email">Time Start</label>
                         <input class="rounded w-full py-1 px-3 text-gray-700" type="text" placeholder="Start">
