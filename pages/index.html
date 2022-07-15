@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
     <script src="//unpkg.com/alpinejs" defer></script>
     <title>Chill & Burn</title>
     <script>
@@ -25,6 +26,8 @@
                         },
                     },
                     backgroundImage: {
+                        'bg-welcome': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/bg-welcome.png')",
+                        'bg-about': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/bg-about.png')",
                         'section2-1': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/1.png')",
                         'section2-2': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/2.png')",
                         'section2-3': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/3.png')",
@@ -58,8 +61,10 @@
                 <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'welcome'}"></div>
                 <a href="#">Welcome</a>
             </li>
-            <li class="cursor-pointer" :class="{'text-secondary rounded-t-lg': navbar === 'about'}"
-                @click.prevent="navbar = 'about'"><a href="#">About</a>
+            <li class="cursor-pointer flex items-center justify-center gap-2"
+                :class="{'text-secondary': navbar === 'about'}" @click.prevent="navbar = 'about'">
+                <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'about'}"></div>
+                <a href="#">About</a>
             </li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">Blog</a></li>
@@ -67,10 +72,11 @@
         </div>
     </ul>
     <!-- Navbar End -->
+    <!-- Welcome Page Start -->
     <div x-show="navbar === 'welcome'">
         <!-- Section 1 Start -->
         <div
-            class="bg-[url('/img/bg.png')] h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl	">
+            class="bg-bg-welcome h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl	">
             <div class="relative pt-44 text-white">
                 <!-- Title Start -->
                 <h1 class="font-bold text-2xl w-full sm:text-3xl sm:w-96">START THE MORNING WITH A <span
@@ -78,10 +84,8 @@
                 <!-- Title End -->
                 <!-- Subtitle Start -->
                 <h2 class="w-full text-base text-white mt-5 mb-5 sm:w-2/3 md:w-[600px]">A place to experience the
-                    delights
-                    of modern
-                    coffee art!
-                    It offers its guest scrumption dessert, tasty coffee and, of course, warmth</h2>
+                    delights of modern coffee art! It offers its guest scrumption dessert, tasty coffee and, of course,
+                    warmth</h2>
                 <!-- Subtitle End -->
                 <!-- Button Start -->
                 <div class="flex w-full justify-center sm:justify-start">
@@ -180,14 +184,12 @@
                 </div>
                 <div class="bg-third text-white w-full h-full p-5 sm:w-1/2 lg:h-96 lg:p-10">
                     <p class="bg-primary w-28 py-1 text-center rounded-md my-5">Our History</p>
-                    <h3 class="text-xl mb-5">Cursus habitasse neque</h3>
+                    <h2 class="text-xl mb-5">Cursus habitasse neque</h2>
                     <p class="text-sm">Our incredibly rare beans come from humble beginnings in Yemen, where decades of
                         political turmoil once forced local farmers to start growing Khat, a narcotic native to the
-                        Arabian
-                        Peninsula.</p><br>
+                        Arabian Peninsula.</p><br>
                     <p class="text-sm">The Dawoodi Bohra Community changed this, removing all the Khat plants and
-                        replacing
-                        the with coffee, bringing this humble brew back to its roots.</p>
+                        replacing the with coffee, bringing this humble brew back to its roots.</p>
                 </div>
             </div>
         </div>
@@ -353,9 +355,7 @@
                         <div
                             class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:justify-start sm:items-start sm:top-10 sm:left-10 sm:w-fit lg:left-28">
                             <p class="w-56 text-center sm:text-left sm:font-semibold sm:text-base lg:text-2xl lg:w-80">
-                                BUY 2
-                                COFFEES AND GET
-                                ANOTHER WAFFLE FOR FREE</p>
+                                BUY 2 COFFEES AND GET ANOTHER WAFFLE FOR FREE</p>
                             <button class="w-28 py-1 bg-primary rounded font-bold mb-10 text-center text-xs">ALL
                                 OFFER</button>
                         </div>
@@ -419,7 +419,7 @@
         <!-- Section 6 End -->
         <!-- Section 7 Start -->
         <div class="my-10 mt-20 text-center lg:mx-20">
-            <h4 class="text-white text-2xl">INSTAGRAM: <span class="font-bold">@chill&burn</span></h4>
+            <h2 class="text-white text-2xl">INSTAGRAM: <span class="font-bold">@chill&burn</span></h2>
             <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
             <div class="grid grid-cols-12 grid-rows-12 mx-10 my-5 gap-5">
                 <!-- Image 1 Start -->
@@ -472,7 +472,7 @@
         <!-- Section 7 End -->
         <!-- Section 8 Start -->
         <div class="my-10">
-            <h4 class="text-white text-2xl text-center">CUSTOMER REVIEWS</h4>
+            <h2 class="text-white text-2xl text-center">CUSTOMER REVIEWS</h2>
             <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
             <div class="bg-banner-4 h-fit flex items-center w-full bg-center bg-cover py-5 my-10 lg:h-96">
                 <div class="flex flex-col w-full justify-center md:flex-row">
@@ -578,7 +578,7 @@
         <div class="my-10 text-center">
             <div class="grid grid-cols-12 grid-rows-12 gap-5 mx-10 my-10">
                 <div class="col-start-1 col-span-12 row-span-1 justify-items-center text-white md:col-span-6">
-                    <h4 class="text-4xl">BLOG</h4>
+                    <h2 class="text-4xl">BLOG</h2>
                     <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
                     <p class="mx-auto w-full my-5">Contains hot news from various regions about coffee and for coffee
                         lovers
@@ -625,21 +625,21 @@
             <div
                 class="bg-banner-5 h-fit w-full flex justify-center items-center bg-center bg-cover py-5 my-10 lg:h-80">
                 <div class="text-white text-center">
-                    <h4 class="font-bold text-xl">SUBSCRIBE TO OUR NEWSLETTER AND YOTUBE</h4>
-                    <div class="flex flex-col w-full my-5 px-10 justify-center items-center">
-                        <label class="text-white mb-2" for="email">Enter your email</label>
-                        <input class="rounded w-full py-1 px-3 text-gray-700 md:w-72" id="email" type="text"
-                            placeholder="Enter your email">
-                    </div>
-                    <button
-                        class="px-10 py-1 bg-secondary rounded font-bold text-center text-sm text-black">SUBSCRIBE</button>
+                    <h2 class="font-bold text-xl">SUBSCRIBE TO OUR NEWSLETTER AND YOTUBE</h4>
+                        <div class="flex flex-col w-full my-5 px-10 justify-center items-center">
+                            <label class="text-white mb-2" for="email">Enter your email</label>
+                            <input class="rounded w-full py-1 px-3 text-gray-700 md:w-72" id="email" type="text"
+                                placeholder="Enter your email">
+                        </div>
+                        <button
+                            class="px-10 py-1 bg-secondary rounded font-bold text-center text-sm text-black">SUBSCRIBE</button>
                 </div>
             </div>
         </div>
         <!-- Section 10 End -->
         <!-- Section 11 Start -->
         <div class="my-10 lg:mx-20">
-            <h4 class="text-white text-2xl text-center">RESERVE A TABLE</h4>
+            <h2 class="text-white text-2xl text-center">RESERVE A TABLE</h2>
             <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
             <div class="my-5 flex flex-col h-fit gap-10 w-full md:flex-row">
                 <div class="w-full md:w-1/2">
@@ -685,9 +685,114 @@
         </div>
         <!-- Section 11 End -->
     </div>
+    <!-- Welcome Page End -->
+    <!-- About Page Start -->
     <div x-show="navbar === 'about'">
-        <h1>About Page</h1>
+        <!-- Section 1 Start -->
+        <div
+            class="bg-bg-about h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 mobile:h-screen sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl">
+            <!-- Title Start -->
+            <div class="flex w-full h-full justify-center items-center text-white">
+                <h1 class="font-bold text-2xl w-full text-center sm:text-3xl sm:w-96">OUR STORY</h1>
+            </div>
+            <!-- Title End -->
+        </div>
+        <!-- Section 1 End -->
+        <!-- Section 2 Start -->
+        <div class="my-5">
+            <div class="grid grid-cols-4">
+                <!-- Text Start -->
+                <h2
+                    class="text-white text-2xl w-36 text-center mobile:h-20 mobile:col-span-4 mobile:w-full sm:col-span-1 sm:col-start-4">
+                    About Our Cafe</h2>
+                <!-- Text End -->
+                <!-- Image About 1 Start -->
+                <img class="mobile:col-span-4 mobile:mb-5 sm:px-5 sm:w-full sm:col-sm-2 sm:row-start-1 sm:col-span-3"
+                    src="/img/about/1.png" alt="about-img1">
+                <!-- Image About 1 End -->
+                <!-- Paragraf Start -->
+                <div class="text-white text-sm mobile:mb-5 mobile:px-5 mobile:col-span-4 sm:px-5 sm:my-5 sm:col-span-2">
+                    <p class="mb-5">
+                        This cafe was created in 2001 by an entrepreneur who wanted to create and develop his own
+                        cafe. Together with his friends and support of his family, he finally managed to set up the
+                        cafe of his dreams. A place that will make all who come will see and feel his struggle.
+                    </p>
+                    <p>
+                        This cafe was created with a simple and attractive theme to attract customers, mostly young
+                        people. In this cafe there is also a spot to take pictures to be shared with customers
+                        social media. This cafe is made for those who are looking for a place to just hang out or to
+                        relax with friends.
+                    </p>
+                </div>
+                <!-- Paragraf End -->
+                <!-- Image About 1 Start -->
+                <img class="mobile:col-span-4 mobile:mb-5 sm:px-5 sm:col-span-2 sm:my-5" src="/img/about/2.png"
+                    alt="about-img2">
+                <!-- Image About 1 End -->
+            </div>
+        </div>
+        <!-- Section 2 End -->
+        <!-- Section 3 Start -->
+        <div id="controls-carousel" class="relative my-5" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="overflow-hidden relative h-56 md:h-96">
+                <!-- Item 1 Start -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+                    data-carousel-item="">
+                    <img src="/img/about/carousel/carousel 1.png"
+                        class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                        alt="carousel-1">
+                </div>
+                <!-- Item 1 End -->
+                <!-- Item 2 Start -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+                    data-carousel-item="">
+                    <img src="/img/about/carousel/carousel 2.png"
+                        class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                        alt="carousel-2">
+                </div>
+                <!-- Item 2 End -->
+                <!-- Item 3 Start -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+                    data-carousel-item="">
+                    <img src="/img/about/carousel/carousel 3.png"
+                        class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                        alt="carousel-3">
+                </div>
+                <!-- Item 3 End -->
+            </div>
+            <!-- Slider Control Start -->
+            <button type="button"
+                class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span>
+                    <svg aria-hidden="true" class="w-6 h-6 text-secondary" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span>
+                    <svg aria-hidden="true" class="w-6 h-6 text-secondary" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+            <!-- Slider Control End -->
+        </div>
+        <!-- Section 3 End -->
     </div>
+    <!-- About Page End -->
+    <!-- Script Start -->
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    <!-- Script End -->
 </body>
 
 </html>
