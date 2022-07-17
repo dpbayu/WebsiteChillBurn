@@ -66,7 +66,11 @@
                 <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'about'}"></div>
                 <a href="#">About</a>
             </li>
-            <li><a href="#">Menu</a></li>
+            <li class="cursor-pointer flex items-center justify-center gap-2"
+                :class="{'text-secondary': navbar === 'menu'}" @click.prevent="navbar = 'menu'">
+                <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'menu'}"></div>
+                <a href="#">Menu</a>
+            </li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </div>
@@ -712,7 +716,7 @@
                 <!-- Image About 1 End -->
                 <!-- Paragraf Start -->
                 <div class="text-white text-sm mobile:mb-5 mobile:px-5 mobile:col-span-4 sm:px-5 sm:my-5 sm:col-span-2">
-                    <p class="mb-5">
+                    <p class="mb-5 text-sm">
                         This cafe was created in 2001 by an entrepreneur who wanted to create and develop his own
                         cafe. Together with his friends and support of his family, he finally managed to set up the
                         cafe of his dreams. A place that will make all who come will see and feel his struggle.
@@ -726,8 +730,8 @@
                 </div>
                 <!-- Paragraf End -->
                 <!-- Image About 1 Start -->
-                <img class="mobile:col-span-4 mobile:mb-5 sm:px-5 sm:col-span-2 sm:my-5" src="/img/about/2.png"
-                    alt="about-img2">
+                <img class="mobile:col-span-4 mobile:mb-5 sm:px-5 sm:col-span-2 sm:-mt-16 sm:h-96 sm:w-full"
+                    src="/img/about/2.png" alt="about-img2">
                 <!-- Image About 1 End -->
             </div>
         </div>
@@ -735,7 +739,7 @@
         <!-- Section 3 Start -->
         <div id="controls-carousel" class="relative mb-5" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="overflow-hidden relative h-56 md:h-96">
+            <div class="overflow-hidden relative h-56 md:h-72">
                 <!-- Item 1 Start -->
                 <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
                     data-carousel-item="">
@@ -803,7 +807,7 @@
                 <!-- Paragraf Start -->
                 <div
                     class="text-white text-sm mobile:mb-5 mobile:px-5 mobile:col-span-4 sm:px-5 sm:my-5 sm:col-span-2 sm:col-start-3">
-                    <p class="mb-5">
+                    <p class="mb-5 text-sm">
                         The coffee in this cafe uses very good and good quality coffee beans. These coffee beans are
                         obtained from coffee farmers who have collaborated with this cafe to produce the best coffee.
                         This coffee bean has passed many tests and trials to produce the best coffee in this cafe.
@@ -823,39 +827,48 @@
         </div>
         <!-- Section 4 End -->
         <!-- Section 5 Start -->
-        <div class="mt-5 text-white flex mobile:flex-col mobile:gap-3 mobile:items-center">
-            <p class="font-bold mobile:text-3xl">Come to visit us.</p>
-            <img class="h-56" src="/img/about/5.png" alt="about-img5">
+        <div class="mt-5 text-white flex w-full mobile:flex-col mobile:gap-3 mobile:items-center sm:p-5">
+            <div class="sm:w-1/3">
+                <p class="font-bold mobile:text-3xl sm:text-4xl">Come to visit us.</p>
+            </div>
+            <div class="sm:w-2/3">
+                <img class="h-56 sm:" src="/img/about/5.png" alt="about-img5">
+            </div>
         </div>
         <!-- Section 5 End -->
     </div>
     <!-- About Page End -->
+    <!-- Menu Page Start -->
+    <div x-show="navbar === 'menu'">
+        <h1>Menu Page</h1>
+    </div>
+    <!-- Menu Page End -->
     <!-- Footer Start -->
-    <footer class="bg-zinc-900 text-white pb-5">
-        <div class="flex">
+    <footer class="bg-zinc-900 text-white pb-5 sm:pb-0">
+        <div class="flex sm:flex-col">
             <!-- Info Start -->
-            <div class="flex p-5 mobile:flex-col mobile:gap-3">
+            <div class="flex p-5 mobile:flex-col mobile:gap-3 sm:justify-between">
                 <div>
-                    <h3 class="font-bold">OPENING HOURS</h3>
-                    <p class="mobile:text-xs">Monday - Friday: 09.00 am - 21.00 pm</p>
-                    <p class="mobile:text-xs">Saturday - Sunday: 08.00 am - 23.00 pm</p>
+                    <h3 class="font-bold sm:text-sm">OPENING HOURS</h3>
+                    <p class="mobile:text-xs sm:text-xs">Monday - Friday: 09.00 am - 21.00 pm</p>
+                    <p class="mobile:text-xs sm:text-xs">Saturday - Sunday: 08.00 am - 23.00 pm</p>
                 </div>
                 <div>
-                    <h3 class="font-bold">LOCATION</h3>
-                    <p class="mobile:text-xs">Zamrud Street Blok A-7 No 5</p>
-                    <p class="mobile:text-xs">Kembangan, Jakarta Barat 11610, IDN</p>
+                    <h3 class="font-bold sm:text-sm">LOCATION</h3>
+                    <p class="mobile:text-xs sm:text-xs">Zamrud Street Blok A-7 No 5</p>
+                    <p class="mobile:text-xs sm:text-xs">Kembangan, Jakarta Barat 11610, IDN</p>
                 </div>
                 <div>
-                    <h3 class="font-bold">OPENING HOURS</h3>
-                    <p class="mobile:text-xs">+62 8555656658</p>
-                    <p class="mobile:text-xs">Coffeeshop@gmail.com</p>
+                    <h3 class="font-bold sm:text-sm">OPENING HOURS</h3>
+                    <p class="mobile:text-xs sm:text-xs">+62 8555656658</p>
+                    <p class="mobile:text-xs sm:text-xs">Coffeeshop@gmail.com</p>
                 </div>
             </div>
             <!-- Info End -->
             <!-- Social Media Start -->
-            <div class="flex p-5 mobile:flex-col mobile:gap-1">
+            <div class="flex p-5 mobile:flex-col mobile:gap-1 sm:items-end">
                 <!-- Instagram Start -->
-                <svg class="fill-current h-7 w-7" viewBox="0 0 56.7 56.7" enable-background="new 0 0 56.7 56.7">
+                <svg class="fill-current h-7 w-7 sm:h-5 sm:w-5" viewBox="0 0 56.7 56.7" enable-background="new 0 0 56.7 56.7">
                     <g>
                         <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
 		c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
@@ -868,7 +881,7 @@
                 </svg>
                 <!-- Instagram End -->
                 <!-- Facebook Start -->
-                <svg class="fill-current h-7 w-7" viewBox="0 0 32 32">
+                <svg class="fill-current h-7 w-7 sm:h-5 sm:w-5" viewBox="0 0 32 32">
                     <g data-name="facebook fb face book" id="facebook_fb_face_book">
                         <path
                             d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5h8a1,1,0,0,0,1-1V20a1,1,0,0,0-1-1H15V17h1a1,1,0,0,0,1-1V12.5A2.5,2.5,0,0,1,19.5,10H22v2H21a2,2,0,0,0-2,2v2a1,1,0,0,0,1,1h1.72l-.5,2H20a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V21h1a1,1,0,0,0,1-.76l1-4a1,1,0,0,0-.18-.86A1,1,0,0,0,23,15H21V14h2a1,1,0,0,0,1-1V9a1,1,0,0,0-1-1H19.5A4.51,4.51,0,0,0,15,12.5V15H14a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h1v6H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3V24a3,3,0,0,1-3,3H20a1,1,0,0,0,0,2h4a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Z" />
@@ -876,7 +889,7 @@
                 </svg>
                 <!-- Facebook End -->
                 <!-- Twitter Start -->
-                <svg class="h-7 w-7 fill-current" viewBox="0 0 64 64">
+                <svg class="h-7 w-7 fill-current sm:h-5 sm:w-5" viewBox="0 0 64 64">
                     <style>
                         .a {
                             fill: none;
@@ -898,9 +911,9 @@
             <!-- Social Media End -->
         </div>
         <div class="h-[1px] w-full bg-white rounded-full"></div>
-        <div class="w-full flex justify-center mobile:items-center mobile:flex-col">
+        <div class="w-full flex justify-center items-center gap-5 mobile:items-center mobile:flex-col sm:justify-between sm:px-5">
             <!-- Logo Start -->
-            <img class="h-28" src="/img/logo.png" alt="logo">
+            <img class="h-28 sm:h-16" src="/img/logo.png" alt="logo">
             <!-- Logo End -->
             <!-- Menu Bottom Start -->
             <ul>
