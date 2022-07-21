@@ -29,6 +29,7 @@
                         'bg-welcome': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/bg-welcome.png')",
                         'bg-about': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/bg-about.png')",
                         'bg-menu': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/bg-menu.png')",
+                        'bg-blog': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/bg-blog.png')",
                         'section2-1': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/1.png')",
                         'section2-2': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/2.png')",
                         'section2-3': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/3.png')",
@@ -72,13 +73,17 @@
                 <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'menu'}"></div>
                 <a href="#">Menu</a>
             </li>
-            <li><a href="#">Blog</a></li>
+            <li class="cursor-pointer flex items-center justify-center gap-2"
+                :class="{'text-secondary': navbar === 'blog'}" @click.prevent="navbar = 'blog'">
+                <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'blog'}"></div>
+                <a href="#">Blog</a>
+            </li>
             <li><a href="#">Contact</a></li>
         </div>
     </ul>
     <!-- Navbar End -->
     <!-- Welcome Page Start -->
-    <div x-show="navbar === 'welcome'">
+    <div x-show="navbar === 'welcomes'">
         <!-- Section 1 Start -->
         <div
             class="bg-bg-welcome h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl	">
@@ -1016,6 +1021,86 @@
         <!-- Section 4 End -->
     </div>
     <!-- Menu Page End -->
+    <!-- Blog Page Start -->
+    <div x-show="navbar === 'welcome'">
+        <!-- Section 1 Start -->
+        <div
+            class="bg-bg-blog h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 mobile:mb-0 mobile:h-screen sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl">
+            <!-- Title Start -->
+            <div class="flex w-full h-full justify-center items-center text-white">
+                <h1 class="font-bold text-2xl w-full text-center sm:text-3xl sm:w-96">BLOG</h1>
+            </div>
+            <!-- Title End -->
+        </div>
+        <!-- Section 1 End -->
+        <!-- Section 2 Start -->
+        <div class="my-10 text-center">
+            <div class="grid grid-cols-12 grid-rows-12 gap-5 mx-10 my-10">
+                <div class="col-start-1 col-span-12 md:col-span-6 md:col-start-1 md:row-span-2 md:row-start-1">
+                    <div
+                        class="bg-blog-3 bg-cover w-full relative flex flex-col justify-center h-56 md:h-full rounded-sm">
+                        <div class="brightness-50 h-1/2 w-full">
+                            <img class="h-full w-full" src="/img/blog/1.png" alt="blog1">
+                        </div>
+                        <div class="text-white w-full h-full px-5">
+                            <p class="w-full text-xl font-bold pt-5 mb-5 h-16">WHEN THE BEST TIME TO DRINK COFFEE
+                            </p>
+                            <p class="text-sm text-left">Coffee is best consumed when cortisol production is low,
+                                while in the morning this hormone is usually at its peak. The hormone cortisol or
+                                commonly called the stress hormone plays a role in increasing alertness.</p>
+                            <div class="flex mt-5 justify-between">
+                                <p class="font-semibold text-left">21 Oct 2021</p>
+                                <p class="px-5 bg-secondary rounded-full">Read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-1 col-span-12 md:col-start-7 md:col-span-3">
+                    <div
+                        class="bg-blog-3 bg-cover w-full relative flex flex-col justify-center h-fit md:h-full rounded-sm">
+                        <div class="brightness-50 h-1/2 w-full">
+                            <img class="h-full w-full" src="/img/blog/1.png" alt="blog1">
+                        </div>
+                        <div class="text-white w-full h-full">
+                            <p class="w-full text-xs font-bold pt-5 px-5">HOW TO MAKE A DELICIOUS COFFEE AT
+                                HOME ?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-1 col-span-12 md:col-start-10 md:col-span-3 md:row-start-1">
+                    <div class="bg-blog-2 bg-cover w-full relative flex justify-center h-56 md:h-40 lg:h-56 rounded-sm">
+                        <div
+                            class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
+                            <p class="w-56 text-lg font-semibold h-20 md:w-28 md:text-sm lg:text-xl lg:w-56">HOW TO MAKE
+                            </p>
+                            <div class="h-[1px] mt-5 w-44 bg-white rounded-full md:w-28 lg:w-44"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-1 col-span-12 md:col-start-7 md:col-span-3 md:row-start-2">
+                    <div class="bg-blog-2 bg-cover w-full relative flex justify-center h-56 md:h-40 lg:h-56 rounded-sm">
+                        <div
+                            class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
+                            <p class="w-56 text-lg font-semibold h-20 md:w-28 md:text-sm lg:text-xl lg:w-56">?</p>
+                            <div class="h-[1px] mt-5 w-44 bg-white rounded-full md:w-28 lg:w-44"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-1 col-span-12 md:col-start-10 md:col-span-3 md:row-start-2">
+                    <div class="bg-blog-2 bg-cover w-full relative flex justify-center h-56 md:h-40 lg:h-56 rounded-sm">
+                        <div
+                            class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
+                            <p class="w-56 text-lg font-semibold h-20 md:w-28 md:text-sm lg:text-xl lg:w-56">HOW TO MAKE
+                                DELICIOUS COFFEE AT HOME ?</p>
+                            <div class="h-[1px] mt-5 w-44 bg-white rounded-full md:w-28 lg:w-44"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section 2 End -->
+    </div>
+    <!-- Blog Page End -->
     <!-- Footer Start -->
     <footer class="bg-zinc-900 text-white pb-5 sm:pb-0">
         <div class="flex sm:flex-col md:flex-row md:justify-between">
