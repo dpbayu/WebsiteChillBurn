@@ -28,6 +28,7 @@
                     backgroundImage: {
                         'bg-welcome': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/bg-welcome.png')",
                         'bg-about': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/bg-about.png')",
+                        'bg-menu': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/bg-menu.png')",
                         'section2-1': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/1.png')",
                         'section2-2': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/2.png')",
                         'section2-3': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/3.png')",
@@ -77,7 +78,7 @@
     </ul>
     <!-- Navbar End -->
     <!-- Welcome Page Start -->
-    <div x-show="navbar === 'welcome'">
+    <div x-show="navbar === 'welcomes'">
         <!-- Section 1 Start -->
         <div
             class="bg-bg-welcome h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl	">
@@ -228,7 +229,7 @@
                                 <p class="text-sm font-bold">Rp 10.000</p>
                             </div>
                             <img class="absolute -top-1 -right-9 rounded-full h-28 w-28 mobile:h-20 mobile:w-20 mobile:-top-10 mobile:right-0"
-                                src="/img/menu/coffee/1.png" alt="Espresso">
+                                src="/img/listmenu/coffee/1.png" alt="Espresso">
                         </div>
                         <div class="absolute top-2 -left-12">
                             <div class="absolute top-5 left-16">
@@ -250,7 +251,7 @@
                                 <p class="text-sm font-bold">Rp 11.000</p>
                             </div>
                             <img class="absolute -top-1 -right-9 rounded-full h-28 w-28 mobile:h-20 mobile:w-20 mobile:-top-10 mobile:right-0"
-                                src="/img/menu/coffee/2.png" alt="Americano">
+                                src="/img/listmenu/coffee/2.png" alt="Americano">
                         </div>
                         <div class="absolute top-2 -left-12">
                             <div class="absolute top-5 left-16">
@@ -271,7 +272,7 @@
                                 <p class="text-sm font-bold">Rp 13.000</p>
                             </div>
                             <img class="absolute -top-1 -right-9 rounded-full h-28 w-28 mobile:h-20 mobile:w-20 mobile:-top-10 mobile:right-0"
-                                src="/img/menu/coffee/3.png" alt="Cappucino">
+                                src="/img/listmenu/coffee/3.png" alt="Cappucino">
                         </div>
                         <div class="absolute top-2 -left-12">
                             <div class="absolute top-5 left-16">
@@ -292,7 +293,7 @@
                                 <p class="text-sm font-bold">Rp 15.000</p>
                             </div>
                             <img class="absolute -top-1 -right-9 rounded-full h-28 w-28 mobile:h-20 mobile:w-20 mobile:-top-10 mobile:right-0"
-                                src="/img/menu/coffee/4.png" alt="Latte">
+                                src="/img/listmenu/coffee/4.png" alt="Latte">
                         </div>
                         <div class="absolute top-2 -left-12">
                             <div class="absolute top-5 left-16">
@@ -313,7 +314,7 @@
                                 <p class="text-sm font-bold">Rp 12.700</p>
                             </div>
                             <img class="absolute -top-1 -right-9 rounded-full h-28 w-28 mobile:h-20 mobile:w-20 mobile:-top-10 mobile:right-0"
-                                src="/img/menu/coffee/5.png" alt="Macchiato">
+                                src="/img/listmenu/coffee/5.png" alt="Macchiato">
                         </div>
                         <div class="absolute top-2 -left-12">
                             <div class="absolute top-5 left-16">
@@ -334,7 +335,7 @@
                                 <p class="text-sm font-bold">Rp 17.000</p>
                             </div>
                             <img class="absolute -top-1 -right-9 rounded-full h-28 w-28 mobile:h-20 mobile:w-20 mobile:-top-10 mobile:right-0"
-                                src="/img/menu/coffee/6.png" alt="Vanilla Latte">
+                                src="/img/listmenu/coffee/6.png" alt="Vanilla Latte">
                         </div>
                         <div class="absolute top-2 -left-12">
                             <div class="absolute top-5 left-16">
@@ -354,7 +355,7 @@
         <!-- Section 5 Start -->
         <div class="my-10">
             <div class="flex flex-col items-center">
-                <div class="bg-banner-1 h-40 w-full bg-cover relative sm:h-56 lg:h-72">
+                <div class="bg-banner-1 h-40 w-full bg-cover relative sm:h-56 lg:h-72 xl:h-96">
                     <div class="text-white text-sm w-full h-full justify-center items-center">
                         <div
                             class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:justify-start sm:items-start sm:top-10 sm:left-10 sm:w-fit lg:left-28">
@@ -366,7 +367,7 @@
                     </div>
                 </div>
                 <div class="w-full flex flex-col sm:flex-row">
-                    <div class="bg-banner-2 h-40 w-full bg-cover relative lg:h-60">
+                    <div class="bg-banner-2 h-40 w-full bg-cover relative lg:h-60 xl:h-72">
                         <div class="text-white text-sm w-full h-full justify-center items-center">
                             <div
                                 class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:top-5">
@@ -376,7 +377,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-banner-3 h-40 w-full bg-cover relative lg:h-60">
+                    <div class="bg-banner-3 h-40 w-full bg-cover relative lg:h-60 xl:h-72">
                         <div class="text-white text-sm w-full h-full justify-center items-center">
                             <div
                                 class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:top-5">
@@ -730,7 +731,7 @@
                 </div>
                 <!-- Paragraf End -->
                 <!-- Image About 1 Start -->
-                <img class="mobile:col-span-4 mobile:mb-5 sm:px-5 sm:col-span-2 sm:-mt-16 sm:h-96 sm:w-full md:h-80"
+                <img class="mobile:col-span-4 mobile:mb-5 mobile:max-h-full sm:px-5 sm:col-span-2 sm:-mt-16 sm:h-96 sm:w-full"
                     src="/img/about/2.png" alt="about-img2">
                 <!-- Image About 1 End -->
             </div>
@@ -820,34 +821,207 @@
                 </div>
                 <!-- Paragraf End -->
                 <!-- Image About 1 Start -->
-                <img class="w-full mobile:col-span-4 mobile:mb-5 sm:px-5 sm:col-span-2 sm:my-5 sm:-mt-10 sm:col-start-1 sm:row-start-2 md:h-80"
+                <img class="w-full mobile:col-span-4 mobile:mb-5 mobile:max-h-full sm:px-5 sm:col-span-2 sm:my-5 sm:-mt-10 sm:col-start-1 sm:row-start-2 md:h-80"
                     src="/img/about/4.png" alt="about-img4">
                 <!-- Image About 1 End -->
             </div>
         </div>
         <!-- Section 4 End -->
         <!-- Section 5 Start -->
-        <div class="mt-5 text-white flex w-full mobile:flex-col mobile:gap-3 mobile:items-center mx-10">
-            <div class="mx-10 sm:w-1/3">
+        <div class="mt-5 text-white flex w-full mobile:flex-col mobile:gap-3 mobile:items-center md:px-10 md:mb-5">
+            <div class="sm:w-1/3 md:mx-10">
                 <p class="font-bold w-44 mobile:text-3xl sm:text-4xl">Come to visit us.</p>
             </div>
-            <div class="mx-10 sm:w-2/3">
-                <img class="h-56 sm:" src="/img/about/5.png" alt="about-img5">
+            <div class="sm:w-2/3 md:mx-10 md:flex md:justify-end">
+                <img class="h-56 mobile:max-h-full md:h-[176px] lg:h-64 xl:h-72" src="/img/about/5.png"
+                    alt="about-img5">
             </div>
         </div>
         <!-- Section 5 End -->
     </div>
     <!-- About Page End -->
     <!-- Menu Page Start -->
-    <div x-show="navbar === 'menu'">
-        <h1>Menu Page</h1>
+    <div x-show="navbar === 'welcome'">
+        <!-- Section 1 Start -->
+        <div
+            class="bg-bg-menu h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 mobile:mb-0 mobile:h-screen sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl">
+            <!-- Title Start -->
+            <div class="flex w-full h-full justify-center items-center text-white">
+                <h1 class="font-bold text-2xl w-full text-center sm:text-3xl sm:w-96">MENU</h1>
+            </div>
+            <!-- Title End -->
+        </div>
+        <!-- Section 1 End -->
+        <!-- Section 2 Start -->
+        <div class="my-10 mobile:my-0 sm:mx-10 xl:mx-48">
+            <div class="flex flex-col sm:flex-row">
+                <div class="bg-zinc-800 text-white w-full h-full p-5 sm:w-1/2 md:h-[425px] lg:h-[425px] lg:p-5">
+                    <h2 class="text-5xl mb-5 text-center">Coffee</h2>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:w-1/2 lg:h-full">
+                    <img class="bg-cover h-[425px] w-full" src="/img/menu/1.png" alt="section2">
+                </div>
+            </div>
+        </div>
+        <!-- Section 2 End -->
+        <!-- Section 3 Start -->
+        <div class="my-10 mobile:my-0 sm:mx-10 xl:mx-48">
+            <div class="flex flex-col sm:flex-row">
+                <div class="bg-zinc-800 text-white w-full h-full p-5 sm:w-1/2 md:h-[425px] lg:h-[425px] lg:p-5">
+                    <h2 class="text-5xl mb-5 text-center">Tea</h2>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:w-1/2 lg:h-full">
+                    <img class="bg-cover h-[425px] w-full" src="/img/menu/2.png" alt="section3">
+                </div>
+            </div>
+        </div>
+        <!-- Section 3 End -->
+        <!-- Section 4 Start -->
+        <div class="my-10 mobile:my-0 sm:mx-10 xl:mx-48">
+            <div class="flex flex-col sm:flex-row">
+                <div class="bg-zinc-800 text-white w-full h-full p-5 sm:w-1/2 md:h-[425px] lg:h-[425px] lg:p-5">
+                    <h2 class="text-5xl mb-5 text-center">Dessert</h2>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Vanilla Latte</p>
+                            <p>Rp 17.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:w-1/2 lg:h-full">
+                    <img class="bg-cover h-[425px] w-full" src="/img/menu/3.png" alt="section3">
+                </div>
+            </div>
+        </div>
+        <!-- Section 4 End -->
     </div>
     <!-- Menu Page End -->
     <!-- Footer Start -->
     <footer class="bg-zinc-900 text-white pb-5 sm:pb-0">
         <div class="flex sm:flex-col md:flex-row md:justify-between">
             <!-- Info Start -->
-            <div class="flex w-full justify-between p-5 mobile:flex-col mobile:gap-3 sm:justify-between lg:justify-left lg:w-2/3">
+            <div
+                class="flex w-full justify-between p-5 mobile:flex-col mobile:gap-3 sm:justify-between lg:justify-left lg:w-2/3">
                 <div>
                     <h3 class="font-bold sm:text-sm">OPENING HOURS</h3>
                     <p class="mobile:text-xs sm:text-xs">Monday - Friday: 09.00 am - 21.00 pm</p>
@@ -868,7 +1042,8 @@
             <!-- Social Media Start -->
             <div class="flex p-5 mobile:flex-col mobile:gap-1 sm:items-end">
                 <!-- Instagram Start -->
-                <svg class="fill-current h-7 w-7 sm:h-5 sm:w-5" viewBox="0 0 56.7 56.7" enable-background="new 0 0 56.7 56.7">
+                <svg class="fill-current h-7 w-7 sm:h-5 sm:w-5" viewBox="0 0 56.7 56.7"
+                    enable-background="new 0 0 56.7 56.7">
                     <g>
                         <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
 		c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
@@ -911,7 +1086,8 @@
             <!-- Social Media End -->
         </div>
         <div class="h-[1px] w-full bg-white rounded-full"></div>
-        <div class="w-full flex justify-center items-center gap-5 mobile:items-center mobile:flex-col sm:justify-between sm:px-5">
+        <div
+            class="w-full flex justify-center items-center gap-5 mobile:items-center mobile:flex-col sm:justify-between sm:px-5">
             <!-- Logo Start -->
             <img class="h-28 sm:h-16" src="/img/logo.png" alt="logo">
             <!-- Logo End -->
