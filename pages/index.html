@@ -78,7 +78,7 @@
     </ul>
     <!-- Navbar End -->
     <!-- Welcome Page Start -->
-    <div x-show="navbar === 'welcomes'">
+    <div x-show="navbar === 'welcome'">
         <!-- Section 1 Start -->
         <div
             class="bg-bg-welcome h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl	">
@@ -841,7 +841,7 @@
     </div>
     <!-- About Page End -->
     <!-- Menu Page Start -->
-    <div x-show="navbar === 'welcome'">
+    <div x-show="navbar === 'menu'">
         <!-- Section 1 Start -->
         <div
             class="bg-bg-menu h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 mobile:mb-0 mobile:h-screen sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl">
@@ -855,7 +855,7 @@
         <!-- Section 2 Start -->
         <div class="my-10 mobile:my-0 sm:mx-10 xl:mx-48">
             <div class="flex flex-col sm:flex-row">
-                <div class="bg-zinc-800 text-white w-full h-full p-5 sm:w-1/2 md:h-[425px] lg:h-[425px] lg:p-5">
+                <div class="bg-zinc-800 text-white w-full h-full p-5 sm:w-1/2 md:h-[425px] lg:h-[425px] lg:px-10">
                     <h2 class="text-5xl mb-5 text-center">Coffee</h2>
                     <div class="flex flex-col gap-2">
                         <div class="flex justify-between">
@@ -908,8 +908,11 @@
         <!-- Section 2 End -->
         <!-- Section 3 Start -->
         <div class="my-10 mobile:my-0 sm:mx-10 xl:mx-48">
-            <div class="flex flex-col sm:flex-row">
-                <div class="bg-zinc-800 text-white w-full h-full p-5 sm:w-1/2 md:h-[425px] lg:h-[425px] lg:p-5">
+            <div class="flex flex-col flex-col-reverse sm:flex-row">
+                <div class="sm:w-1/2 lg:h-full">
+                    <img class="bg-cover h-[425px] w-full" src="/img/menu/2.png" alt="section3">
+                </div>
+                <div class="bg-zinc-800 text-white w-full h-full p-5 sm:w-1/2 md:h-[425px] lg:h-[425px] lg:px-10">
                     <h2 class="text-5xl mb-5 text-center">Tea</h2>
                     <div class="flex flex-col gap-2">
                         <div class="flex justify-between">
@@ -954,16 +957,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="sm:w-1/2 lg:h-full">
-                    <img class="bg-cover h-[425px] w-full" src="/img/menu/2.png" alt="section3">
-                </div>
             </div>
         </div>
         <!-- Section 3 End -->
         <!-- Section 4 Start -->
         <div class="my-10 mobile:my-0 sm:mx-10 xl:mx-48">
             <div class="flex flex-col sm:flex-row">
-                <div class="bg-zinc-800 text-white w-full h-full p-5 sm:w-1/2 md:h-[425px] lg:h-[425px] lg:p-5">
+                <div class="bg-zinc-800 text-white w-full h-full p-5 sm:w-1/2 md:h-[425px] lg:h-[425px] lg:px-10">
                     <h2 class="text-5xl mb-5 text-center">Dessert</h2>
                     <div class="flex flex-col gap-2">
                         <div class="flex justify-between">
