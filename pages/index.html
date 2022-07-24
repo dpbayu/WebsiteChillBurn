@@ -78,7 +78,11 @@
                 <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'blog'}"></div>
                 <a href="#">Blog</a>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li class="cursor-pointer flex items-center justify-center gap-2"
+                :class="{'text-secondary': navbar === 'contact'}" @click.prevent="navbar = 'contact'">
+                <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'contact'}"></div>
+                <a href="#">Contact</a>
+            </li>
         </div>
     </ul>
     <!-- Navbar End -->
@@ -1022,7 +1026,7 @@
     </div>
     <!-- Menu Page End -->
     <!-- Blog Page Start -->
-    <div x-show="navbar === 'welcome'">
+    <div x-show="navbar === 'blog'">
         <!-- Section 1 Start -->
         <div
             class="bg-bg-blog h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 mobile:mb-0 mobile:h-screen sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl">
@@ -1046,7 +1050,8 @@
                             <p class="text-sm text-left">Coffee is best consumed when cortisol production is low,
                                 while in the morning this hormone is usually at its peak. The hormone cortisol or
                                 commonly called the stress hormone plays a role in increasing alertness.</p>
-                            <div class="flex mt-5 justify-between lg:w-full lg:h-1/2 lg:items-center xl:items-end xl:pb-5">
+                            <div
+                                class="flex mt-5 justify-between lg:w-full lg:h-1/2 lg:items-center xl:items-end xl:pb-5">
                                 <p class="font-semibold text-left">21 Oct 2021</p>
                                 <p class="px-5 bg-secondary rounded-full">Read</p>
                             </div>
@@ -1059,7 +1064,8 @@
                             <img class="h-full w-full" src="/img/blog/2.png" alt="blog2">
                         </div>
                         <div class="text-white w-full h-1/2 px-5 pb-5">
-                            <p class="w-full text-xs font-semibold pt-5 mb-5 h-16 mobile:text-xl">HOW TO MAKE A DELICIOUS COFFEE AT HOME ?
+                            <p class="w-full text-xs font-semibold pt-5 mb-5 h-16 mobile:text-xl">HOW TO MAKE A
+                                DELICIOUS COFFEE AT HOME ?
                             </p>
                             <div class="flex mt-5 justify-between items-end text-xs mobile:text-base">
                                 <p class="font-semibold text-left">21 Oct 2021</p>
@@ -1074,7 +1080,8 @@
                             <img class="h-full w-full" src="/img/blog/3.png" alt="blog3">
                         </div>
                         <div class="text-white w-full h-1/2 px-5 pb-5">
-                            <p class="w-full text-xs font-semibold pt-5 mb-5 h-16 mobile:text-xl">IS IT HEALTHY TO DRINK TEA ?</p>
+                            <p class="w-full text-xs font-semibold pt-5 mb-5 h-16 mobile:text-xl">IS IT HEALTHY TO DRINK
+                                TEA ?</p>
                             <div class="flex mt-5 justify-between text-xs mobile:text-base">
                                 <p class="font-semibold text-left">21 Oct 2021</p>
                                 <p class="bg-secondary rounded-full mobile:px-5 sm:px-2 sm:py-[1px] lg:px-5">Read</p>
@@ -1088,7 +1095,8 @@
                             <img class="h-full w-full" src="/img/blog/1.png" alt="blog1">
                         </div>
                         <div class="text-white w-full h-1/2 px-5 pb-5">
-                            <p class="w-full text-xs font-semibold pt-5 mb-5 h-16 mobile:text-xl">IS IT HEALTHY TO DRINK COFFEE EVERYDAY ?
+                            <p class="w-full text-xs font-semibold pt-5 mb-5 h-16 mobile:text-xl">IS IT HEALTHY TO DRINK
+                                COFFEE EVERYDAY ?
                             </p>
                             <div class="flex mt-5 justify-between text-xs mobile:text-base">
                                 <p class="font-semibold text-left">21 Oct 2021</p>
@@ -1103,7 +1111,8 @@
                             <img class="h-full w-full" src="/img/blog/1.png" alt="blog1">
                         </div>
                         <div class="text-white w-full h-1/2 px-5 pb-5">
-                            <p class="w-full text-xs font-semibold pt-5 mb-5 h-16 mobile:text-xl">WHAT ARE THE BENEFITS OF DRINKING COFFEE
+                            <p class="w-full text-xs font-semibold pt-5 mb-5 h-16 mobile:text-xl">WHAT ARE THE BENEFITS
+                                OF DRINKING COFFEE
                                 ?</p>
                             <div class="flex mt-5 justify-between text-xs mobile:text-base">
                                 <p class="font-semibold text-left">21 Oct 2021</p>
@@ -1117,6 +1126,102 @@
         <!-- Section 2 End -->
     </div>
     <!-- Blog Page End -->
+    <!-- Menu Contact Start -->
+    <div x-show="navbar === 'welcome'">
+        <!-- Section 1 Start -->
+        <div
+            class="bg-bg-blog h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 mobile:mb-0 mobile:h-screen sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl">
+            <!-- Title Start -->
+            <div class="flex w-full h-full justify-center items-center text-white">
+                <h1 class="font-bold text-2xl w-full text-center sm:text-3xl sm:w-96">CONTACT</h1>
+            </div>
+            <!-- Title End -->
+        </div>
+        <!-- Section 1 End -->
+        <!-- Section 2 Start -->
+        <div class="my-5">
+            <div class="flex justify-evenly max-w-[1200px] mx-auto">
+                <!-- Start Left -->
+                <div class="text-white flex flex-col gap-5">
+                    <div>
+                        <h5 class="text-xl font-bold">Address</h5>
+                        <p>Zamrud Street Kembangan, Jakarta Barat 11610, IDN</p>
+                    </div>
+                    <div>
+                        <h5 class="text-xl font-bold">Email</h5>
+                        <p>chill&burn@gmail.com</p>
+                    </div>
+                    <div>
+                        <h5 class="text-xl font-bold">Social Media</h5>
+                        <div class="flex flex-col gap-1">
+                            <!-- Instagram Start -->
+                            <div class="flex items-center gap-5">
+                                <svg class="fill-current h-7 w-7 sm:h-5 sm:w-5" viewBox="0 0 56.7 56.7"
+                                    enable-background="new 0 0 56.7 56.7">
+                                    <g>
+                                        <path
+                                            d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+		                                        c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
+                                        <circle cx="41.5" cy="16.4" r="2.9" />
+                                        <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+                                                h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+                                                s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+                                                c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z" />
+                                    </g>
+                                </svg>
+                                <p>Instagram</p>
+                            </div>
+                            <!-- Instagram End -->
+                            <!-- Facebook Start -->
+                            <div class="flex items-center gap-5">
+                                <svg class="fill-current h-7 w-7 sm:h-5 sm:w-5" viewBox="0 0 32 32">
+                                    <g data-name="facebook fb face book" id="facebook_fb_face_book">
+                                        <path
+                                            d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5h8a1,1,0,0,0,1-1V20a1,1,0,0,0-1-1H15V17h1a1,1,0,0,0,1-1V12.5A2.5,2.5,0,0,1,19.5,10H22v2H21a2,2,0,0,0-2,2v2a1,1,0,0,0,1,1h1.72l-.5,2H20a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V21h1a1,1,0,0,0,1-.76l1-4a1,1,0,0,0-.18-.86A1,1,0,0,0,23,15H21V14h2a1,1,0,0,0,1-1V9a1,1,0,0,0-1-1H19.5A4.51,4.51,0,0,0,15,12.5V15H14a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h1v6H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3V24a3,3,0,0,1-3,3H20a1,1,0,0,0,0,2h4a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Z" />
+                                    </g>
+                                </svg>
+                                <p>Facebook</p>
+                            </div>
+                            <!-- Facebook End -->
+                            <!-- Twitter Start -->
+                            <div class="flex items-center gap-5">
+                                <svg class="h-7 w-7 fill-current sm:h-5 sm:w-5" viewBox="0 0 64 64">
+                                    <style>
+                                        .a {
+                                            fill: none;
+                                            stroke: #ffffff;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-width: 4px;
+                                        }
+                                    </style>
+                                    <title />
+                                    <g>
+                                        <rect class="a" height="44" rx="4" ry="4" width="44" x="10" y="10" />
+                                        <path class="a"
+                                            d="M20,38V22a4,4,0,0,1,8,0v2h8a4,4,0,0,1,0,8H28v6H40a4,4,0,0,1,0,8H28A8.00036,8.00036,0,0,1,20,38Z" />
+                                    </g>
+                                </svg>
+                                <p>Twitter</p>
+                            </div>
+                            <!-- Twitter End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Left End -->
+                <!-- Right Start -->
+                <div>
+                    <iframe class="rounded-sm"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63464.78335237976!2d106.70628521880697!3d-6.191054070343925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f76dd848d7a9%3A0x525d684aed1f9b1d!2sKembangan%2C%20West%20Jakarta%20City%2C%20Jakarta%2C%20Indonesia!5e0!3m2!1sen!2sro!4v1658635779815!5m2!1sen!2sro"
+                        width="550" height="300" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Right End -->
+            </div>
+        </div>
+        <!-- Section 2 End -->
+    </div>
+    <!-- Menu Contact End -->
     <!-- Footer Start -->
     <footer class="bg-zinc-900 text-white pb-5 sm:pb-0">
         <div class="flex sm:flex-col md:flex-row md:justify-between">
@@ -1197,12 +1302,14 @@
                 <div class="flex gap-5 z-10 text-white text-sm sm:text-base">
                     <li class="cursor-pointer flex items-center justify-center gap-2"
                         :class="{'text-secondary': navbar === 'welcome'}" @click.prevent="navbar = 'welcome'">
-                        <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'welcome'}"></div>
+                        <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'welcome'}">
+                        </div>
                         <a href="#">Welcome</a>
                     </li>
                     <li class="cursor-pointer flex items-center justify-center gap-2"
                         :class="{'text-secondary': navbar === 'about'}" @click.prevent="navbar = 'about'">
-                        <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'about'}"></div>
+                        <div class="h-2 w-2 bg-secondary rounded-full" :class="{'hidden': navbar !== 'about'}">
+                        </div>
                         <a href="#">About</a>
                     </li>
                     <li><a href="#">Menu</a></li>
