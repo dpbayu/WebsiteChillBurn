@@ -87,7 +87,7 @@
     </ul>
     <!-- Navbar End -->
     <!-- Welcome Page Start -->
-    <div x-show="navbar === 'welcomes'">
+    <div x-show="navbar === 'welcome'">
         <!-- Section 1 Start -->
         <div
             class="bg-bg-welcome h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl	">
@@ -163,27 +163,36 @@
         <!-- Section 2 Start -->
         <div class="my-10">
             <div class="flex flex-col items-center gap-5 sm:flex-row sm:justify-evenly">
-                <div class="bg-section2-1 h-44 w-44 bg-cover relative rounded-sm">
-                    <div class="text-white text-sm w-full h-full justify-center items-center">
-                        <div class="absolute top-5 left-5 flex flex-col w-full h-full">
+                <div class="h-44 w-44 bg-cover relative rounded-sm lg:h-56 lg:w-56">
+                    <div class="brightness-50 h-full w-full">
+                        <img class="h-full w-full" src="/img/1.png" alt="1">
+                    </div>
+                    <div class="text-white text-sm w-full h-full justify-center items-center lg:text-xl">
+                        <div class="absolute top-5 left-0 flex flex-col w-full h-full px-5">
                             <p class="text-secondary">01</p>
                             <p>Fun Hangout</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-section2-2 h-44 w-44 bg-cover relative rounded-sm">
-                    <div class="text-white text-sm w-full h-full justify-center items-center">
-                        <div class="absolute top-5 left-5 flex flex-col w-full h-full">
+                <div class="h-44 w-44 bg-cover relative rounded-sm lg:h-56 lg:w-56">
+                    <div class="brightness-50 h-full w-full">
+                        <img class="h-full w-full" src="/img/2.png" alt="2">
+                    </div>
+                    <div class="text-white text-sm w-full h-full justify-center items-center lg:text-xl">
+                        <div class="absolute top-5 left-0 flex flex-col w-full h-full px-5">
                             <p class="text-secondary">02</p>
-                            <p class="w-32">Comfortable place to be alone</p>
+                            <p class="w-32 lg:w-full">Comfortable place to be alone</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-section2-3 h-44 w-44 bg-cover relative rounded-sm">
-                    <div class="text-white text-sm w-full h-full justify-center items-center">
-                        <div class="absolute top-5 left-5 flex flex-col w-full h-full">
+                <div class="h-44 w-44 bg-cover relative rounded-sm lg:h-56 lg:w-56">
+                    <div class="brightness-50 h-full w-full">
+                        <img class="h-full w-full" src="/img/3.png" alt="3">
+                    </div>
+                    <div class="text-white text-sm w-full h-full justify-center items-center lg:text-xl">
+                        <div class="absolute top-5 left-0 flex flex-col w-full h-full px-5">
                             <p class="text-secondary">03</p>
-                            <p class="w-32">Can also be used for meetings</p>
+                            <p class="w-32 lg:w-full">Can also be used for meetings</p>
                         </div>
                     </div>
                 </div>
@@ -363,8 +372,12 @@
         <!-- Section 4 End -->
         <!-- Section 5 Start -->
         <div class="my-10">
-            <div class="flex flex-col items-center">
-                <div class="bg-banner-1 h-40 w-full bg-cover relative sm:h-56 lg:h-72 xl:h-96">
+            <div class="flex flex-col items-center text-white gap-5">
+                <h2 class="text-2xl">LATEST PROMO</h2>
+                <div class="w-28 h-[1px] bg-white"></div>
+            </div>
+            <div class="flex my-5 flex-col items-center">
+                <div class="bg-banner-1 h-40 w-full bg-cover relative sm:h-56 lg:h-64">
                     <div class="text-white text-sm w-full h-full justify-center items-center">
                         <div
                             class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:justify-start sm:items-start sm:top-10 sm:left-10 sm:w-fit lg:left-28">
@@ -376,7 +389,7 @@
                     </div>
                 </div>
                 <div class="w-full flex flex-col sm:flex-row">
-                    <div class="bg-banner-2 h-40 w-full bg-cover relative lg:h-60 xl:h-72">
+                    <div class="bg-banner-2 h-40 w-full bg-cover relative lg:h-56">
                         <div class="text-white text-sm w-full h-full justify-center items-center">
                             <div
                                 class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:top-5">
@@ -386,7 +399,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-banner-3 h-40 w-full bg-cover relative lg:h-60 xl:h-72">
+                    <div class="bg-banner-3 h-40 w-full bg-cover relative lg:h-56">
                         <div class="text-white text-sm w-full h-full justify-center items-center">
                             <div
                                 class="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full gap-5 sm:top-5">
@@ -401,12 +414,12 @@
         </div>
         <!-- Section 5 End -->
         <!-- Section 6 Start -->
-        <div class="my-10 lg:mx-20">
+        <div class="m-10 lg:mx-20">
             <div class="flex flex-col items-center text-white gap-5">
                 <h2 class="text-2xl">PRODUCT OF THE WEEK</h2>
                 <div class="w-28 h-[1px] bg-white"></div>
             </div>
-            <div class="m-5 flex flex-col gap-10 sm:flex-row">
+            <div class="mt-5 flex flex-col gap-10 sm:flex-row">
                 <div class="h-56 w-full flex flex-col gap-2 lg:h-80">
                     <img class="h-full w-full bg-cover rounded-sm" src="/img/productofweek/tea.png" alt="product1">
                     <div class="flex justify-between text-white">
@@ -432,16 +445,16 @@
         </div>
         <!-- Section 6 End -->
         <!-- Section 7 Start -->
-        <div class="my-10 mt-20 text-center lg:mx-20">
+        <div class="my-10 mt-20 text-center max-w-[1200px] mx-auto">
             <h2 class="text-white text-2xl">INSTAGRAM: <span class="font-bold">@chill&burn</span></h2>
             <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
             <div class="grid grid-cols-12 grid-rows-12 mx-10 my-5 gap-5">
                 <!-- Image 1 Start -->
-                <img class="h-40 w-full col-start-1 col-span-12 border-base sm:col-span-6 sm:h-full md:h-56 lg:h-full lg:col-span-3"
+                <img class="h-40 w-full col-start-1 col-span-12 border-base sm:col-span-6 sm:h-full md:h-full lg:col-span-3"
                     src="/img/instagram/image1.png" alt="image1">
                 <!-- Image 1 End -->
                 <!-- Image 2 Start -->
-                <img class="h-40 w-full col-start-1 col-span-12 row-start-2 border-base sm:col-span-6 sm:h-full md:h-56 lg:h-full lg:col-span-3"
+                <img class="h-40 w-full col-start-1 col-span-12 row-start-2 border-base sm:col-span-6 sm:h-full md:h-full lg:col-span-3"
                     src="/img/instagram/image2.png" alt="image2">
                 <!-- Image 2 End -->
                 <!-- Image 3 Start -->
@@ -449,16 +462,16 @@
                     src="/img/instagram/image3.png" alt="image3">
                 <!-- Image 3 End -->
                 <!-- Image 4 Start -->
-                <img class="h-40 w-full col-start-1 col-span-12 row-span-2 border-base sm:col-span-6 sm:h-full md:h-56 lg:h-96 lg:col-span-4 lg:h-56"
+                <img class="h-40 w-full col-start-1 col-span-12 row-span-2 border-base sm:col-span-6 sm:h-48 lg:col-span-4"
                     src="/img/instagram/image4.png" alt="image4">
                 <!-- Image 4 End -->
                 <!-- Image 5 Start -->
-                <img class="h-40 w-full col-start-1 col-span-12 row-span-2 border-base sm:col-span-6 sm:h-full md:h-56 lg:h-96 lg:col-span-4 lg:h-56"
+                <img class="h-40 w-full col-start-1 col-span-12 row-span-2 border-base sm:col-span-6 sm:h-48 lg:col-span-4"
                     src="/img/instagram/image5.png" alt="image5">
                 <!-- Image 5 End -->
                 <!-- Image 6 Start -->
                 <div
-                    class="relative h-40 w-full flex justify-center row-span-2 col-start-1 col-span-12 border-base sm:col-span-6 sm:h-full lg:h-full lg:col-start-7 lg:row-start-1">
+                    class="relative h-40 w-full flex justify-center row-span-2 col-start-1 col-span-12 border-base sm:col-span-6 sm:h-48 lg:h-full sm:row-span-0 lg:col-start-7 lg:row-start-1">
                     <img class="h-full w-full" src="/img/instagram/image6.png" alt="image6">
                     <div
                         class="text-white flex flex-col text-center justify-center w-full h-full items-center absolute top-0 left-0 text-left py-5">
@@ -468,17 +481,19 @@
                 </div>
                 <!-- Image End 6 -->
                 <!-- Arrow Start -->
-                <div
-                    class="flex col-start-1 col-span-12 row-start-12 justify-center items-center gap-10 sm:col-span-6 lg:mt-44 lg:col-start-9">
-                    <svg class="h-10 w-10 fill-current text-primary" viewBox="0 0 512 512">
-                        <path
-                            d="M189.3,128.4L89,233.4c-6,5.8-9,13.7-9,22.4c0,8.7,3,16.5,9,22.4l100.3,105.4c11.9,12.5,31.3,12.5,43.2,0  c11.9-12.5,11.9-32.7,0-45.2L184.4,288h217c16.9,0,30.6-14.3,30.6-32c0-17.7-13.7-32-30.6-32h-217l48.2-50.4  c11.9-12.5,11.9-32.7,0-45.2C220.6,115.9,201.3,115.9,189.3,128.4z" />
-                    </svg>
-                    <p class="font-bold text-secondary">01</p>
-                    <svg class="h-10 w-10 fill-current text-secondary" viewBox="0 0 512 512">
-                        <path
-                            d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z" />
-                    </svg>
+                <div class="col-start-1 col-span-12 row-start-12 sm:col-span-6 sm:row-start-6 sm:col-start-7 lg:row-start-4 lg:col-start-9">
+                    <div
+                        class="flex h-full w-full justify-center items-center gap-10">
+                        <svg class="h-10 w-10 fill-current text-primary" viewBox="0 0 512 512">
+                            <path
+                                d="M189.3,128.4L89,233.4c-6,5.8-9,13.7-9,22.4c0,8.7,3,16.5,9,22.4l100.3,105.4c11.9,12.5,31.3,12.5,43.2,0  c11.9-12.5,11.9-32.7,0-45.2L184.4,288h217c16.9,0,30.6-14.3,30.6-32c0-17.7-13.7-32-30.6-32h-217l48.2-50.4  c11.9-12.5,11.9-32.7,0-45.2C220.6,115.9,201.3,115.9,189.3,128.4z" />
+                        </svg>
+                        <p class="font-bold text-secondary">01</p>
+                        <svg class="h-10 w-10 fill-current text-secondary" viewBox="0 0 512 512">
+                            <path
+                                d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z" />
+                        </svg>
+                    </div>
                 </div>
                 <!-- Arrow End -->
             </div>
@@ -589,8 +604,8 @@
         </div>
         <!-- Section 8 End -->
         <!-- Section 9 Start -->
-        <div class="my-10 text-center">
-            <div class="grid grid-cols-12 grid-rows-12 gap-5 mx-10 my-10">
+        <div class="m-10 text-center">
+            <div class="grid grid-cols-12 grid-rows-12 gap-5 my-10 sm:px-10 md:max-w-[1200px] md:mx-auto">
                 <div class="col-start-1 col-span-12 row-span-1 justify-items-center text-white md:col-span-6">
                     <h2 class="text-4xl">BLOG</h2>
                     <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
@@ -652,10 +667,10 @@
         </div>
         <!-- Section 10 End -->
         <!-- Section 11 Start -->
-        <div class="my-10 lg:mx-20">
+        <div class="my-10">
             <h2 class="text-white text-2xl text-center">RESERVE A TABLE</h2>
             <div class="h-[1px] w-60 bg-white mx-auto mt-5"></div>
-            <div class="my-5 flex flex-col h-fit gap-10 w-full md:flex-row">
+            <div class="my-5 flex flex-col h-fit gap-10 max-w-[1200px] mx-auto md:flex-row">
                 <div class="w-full md:w-1/2">
                     <img class="h-full w-full md:mx-5" src="/img/5.png" alt="section11">
                 </div>
@@ -1039,8 +1054,8 @@
         <!-- Section 1 End -->
         <!-- Section 2 Start -->
         <div class="my-10 text-center">
-            <div class="grid grid-cols-12 grid-rows-12 gap-5 mx-10 my-10 max-w-[1200px] xl:mx-auto">
-                <div class="col-start-1 col-span-12 md:col-span-6 md:col-start-1 md:row-span-2 md:row-start-1">
+            <div class="grid grid-cols-11 grid-rows-12 gap-5 mx-10 my-10 max-w-[1200px] xl:mx-auto">
+                <div class="col-start-1 col-span-12 md:col-span-5 md:col-start-1 md:row-span-2 md:row-start-1">
                     <div class="bg-blog-3 bg-cover w-full relative flex flex-col justify-center h-full rounded-sm">
                         <div class="brightness-50 h-1/2 w-full">
                             <img class="h-full w-full" src="/img/blog/1.png" alt="blog1">
@@ -1058,7 +1073,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-start-1 col-span-12 md:col-start-7 md:col-span-3">
+                <div class="col-start-1 col-span-12 md:col-start-6 md:col-span-3">
                     <div class="bg-blog-3 bg-cover w-full relative flex flex-col justify-center h-fit rounded-sm">
                         <div class="brightness-50 h-1/2 w-full">
                             <img class="h-full w-full" src="/img/blog/2.png" alt="blog2">
@@ -1074,7 +1089,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-start-1 col-span-12 md:col-start-10 md:col-span-3 md:row-start-1">
+                <div class="col-start-1 col-span-12 md:col-start-9 md:col-span-3 md:row-start-1">
                     <div class="bg-blog-3 bg-cover w-full relative flex flex-col justify-center h-fit rounded-sm">
                         <div class="brightness-50 h-1/2 w-full">
                             <img class="h-full w-full" src="/img/blog/3.png" alt="blog3">
@@ -1089,7 +1104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-start-1 col-span-12 md:col-start-7 md:col-span-3 md:row-start-2">
+                <div class="col-start-1 col-span-12 md:col-start-6 md:col-span-3 md:row-start-2">
                     <div class="bg-blog-3 bg-cover w-full relative flex flex-col justify-center h-fit rounded-sm">
                         <div class="brightness-50 h-1/2 w-full">
                             <img class="h-full w-full" src="/img/blog/1.png" alt="blog1">
@@ -1105,7 +1120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-start-1 col-span-12 md:col-start-10 md:col-span-3 md:row-start-2">
+                <div class="col-start-1 col-span-12 md:col-start-9 md:col-span-3 md:row-start-2">
                     <div class="bg-blog-3 bg-cover w-full relative flex flex-col justify-center h-fit rounded-sm">
                         <div class="brightness-50 h-1/2 w-full">
                             <img class="h-full w-full" src="/img/blog/1.png" alt="blog1">
@@ -1127,7 +1142,7 @@
     </div>
     <!-- Blog Page End -->
     <!-- Menu Contact Start -->
-    <div x-show="navbar === 'welcome'">
+    <div x-show="navbar === 'contact'">
         <!-- Section 1 Start -->
         <div
             class="bg-bg-blog h-fit w-full bg-center bg-cover py-5 px-5 mb-10 md:px-20 lg:px-20 mobile:mb-0 mobile:h-screen sm:h-screen xl:h-screen 2xl:h-[725px] xl:max-w-screen-2xl">
@@ -1140,7 +1155,7 @@
         <!-- Section 1 End -->
         <!-- Section 2 Start -->
         <div class="my-5">
-            <div class="flex justify-evenly max-w-[1200px] mx-auto">
+            <div class="flex justify-evenly max-w-[1200px] mx-auto mobile:flex-col mobile:gap-5 mobile:px-5 sm:px-5">
                 <!-- Start Left -->
                 <div class="text-white flex flex-col gap-5">
                     <div>
@@ -1211,7 +1226,7 @@
                 <!-- Left End -->
                 <!-- Right Start -->
                 <div>
-                    <iframe class="rounded-sm"
+                    <iframe class="rounded-sm mobile:w-full sm:w-full md:w-[550px]"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63464.78335237976!2d106.70628521880697!3d-6.191054070343925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f76dd848d7a9%3A0x525d684aed1f9b1d!2sKembangan%2C%20West%20Jakarta%20City%2C%20Jakarta%2C%20Indonesia!5e0!3m2!1sen!2sro!4v1658635779815!5m2!1sen!2sro"
                         width="550" height="300" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
